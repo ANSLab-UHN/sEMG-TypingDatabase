@@ -9,7 +9,7 @@ Each participant has one file containing recordings from day one and day two ind
 
 Data/ P1-19/ T1; T2/ keylogs.txt; LAG_TIMINGS.csv; KeyData/ A_....rhd; A_....rhd; B_....rhd; ...
 
-The Code folder contains necessary scripts to perform the classification from validation testing. Within the code folder the program classify_root.py is the script where all different settings are set for classification. Classify.py is called from this script and performs the classification according to parameters set in classify_root.py. The other scripts are to read the original intan files.
+The Code folder contains necessary scripts to perform the classification from validation testing. To perform classification first set all parameters (desired features, window length, and test type) in classify_root.py and run this script. Classify.py is called from this script and will loop through all listed participants and tests for each paruticipant the individual rhd datafiles are read using the load_intan_rhd_format.py script. Once the file is read Classify.py aligns the keylog stored in keylog.txt with each recording by adding the associated lag timing from LAG_TIMINGS.csv if any warnings are generated during alignment they will be saved to a ClassificationErrors.csv in the results folder. A dataframe containing all features for each participant is constructed and balenced across labels. This is then used for the different classification methods. The exact size and content of this dataframe varies depending on the test selected in classify_root.py. Code in intanutil and are supporting intan scripts.
 
 Baseline results as discussed in the paper are included within the ClassificationResults folder. This includes both "RawResults" and a ResultsSummary excel sheet.
 
