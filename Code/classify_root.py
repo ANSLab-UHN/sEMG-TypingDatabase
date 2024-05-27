@@ -11,7 +11,6 @@ participant_list = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14'
 #Two test days for each participant
 desired_tests = ['1','2']
 #Best features for a 0.2s window determined from a feature analysis
-features = 
 best_features = ['RMS', 'LOGVAR','WL','WAMP', 'AR1', 'AR2']
 #Window length to be extracted for each keypress
 winlength = 0.2
