@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "keypressemg"
+version = "0.1.0"
+description = "This repository contains code for a dataset containing sEMG data"
+authors = [
+    "Jose Zariffa <jose.zariffa@utoronto.ca>",
+    "Ethan Fetaya <ethan.fetaya@biu.ac.il>",
+    "Idan Achituv <idan.achituve@biu.ac.il>",
+    "Jonathan Eby <jon.eby@mail.utoronto.ca>",
+    "Moshe Beutel <beutelm@biu.ac.il"]
+repository = "https://github.com/ANSLab-UHN/sEMG-TypingDatabase"
+readme = "README.md"
+packages =[
+    {include = 'keypressemg'},
+    {include = "intanutil", from = "keypressemg"},
+    {include = 'common', from = 'keypressemg'},
+    {include = 'datasets', from = 'keypressemg'},
+    {include = 'models', from = 'keypressemg'},
+    {include = 'experiments_read', from = 'keypressemg'}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+matplotlib = "^3.9.0"
+statsmodels = "^0.14.2"
+scikit-learn = "^1.4.2"
+seaborn = "^0.13.2"
+torch = "^2.3.0"
+tqdm = "^4.66.4"
+wandb = "^0.17.0"
+private-federated = {git = "https://github.com/moshebeutel/private_fed_refactored.git", rev = "emg_data"}
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

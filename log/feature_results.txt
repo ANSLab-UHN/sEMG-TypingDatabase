@@ -1,0 +1,1049 @@
+/home/user1/.cache/pypoetry/virtualenvs/keypressemg-kX9W9KCS-py3.11/bin/python3 /home/user1/GIT/KeypressEMG/Code/train.py
+INFO:root:Participant Participant.P1 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.73it/s]
+INFO:root:Epoch 0 loss: 0.5347
+INFO:root:Epoch 0 eval acc: 0.0370 eval loss: 0.0554
+Epoch 2/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.21it/s]
+INFO:root:Epoch 1 loss: 0.5327
+INFO:root:Epoch 1 eval acc: 0.0370 eval loss: 0.0554
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.24it/s]
+INFO:root:Epoch 2 loss: 0.5347
+INFO:root:Epoch 2 eval acc: 0.0370 eval loss: 0.0554
+Epoch 4/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.65it/s]
+INFO:root:Epoch 3 loss: 0.5327
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.39it/s]
+INFO:root:Epoch 4 loss: 0.5347
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.25it/s]
+INFO:root:Epoch 5 loss: 0.5327
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.22it/s]
+INFO:root:Epoch 6 loss: 0.5347
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.53it/s]
+INFO:root:Epoch 7 loss: 0.5337
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.61it/s]
+INFO:root:Epoch 8 loss: 0.5337
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.2147: 100%|██████████| 9/9 [00:00<00:00, 10.29it/s]
+INFO:root:Epoch 9 loss: 0.5306
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P1 done
+INFO:root:Participant Participant.P1 accuracy: 0.037037037037037035
+INFO:root:Participant Participant.P2 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.32it/s]
+INFO:root:Epoch 0 loss: 0.5379
+INFO:root:Epoch 0 eval acc: 0.0204 eval loss: 0.0556
+Epoch 2/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.32it/s]
+INFO:root:Epoch 1 loss: 0.5385
+INFO:root:Epoch 1 eval acc: 0.0241 eval loss: 0.0556
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.39it/s]
+INFO:root:Epoch 2 loss: 0.5394
+INFO:root:Epoch 2 eval acc: 0.0315 eval loss: 0.0555
+Epoch 4/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.47it/s]
+INFO:root:Epoch 3 loss: 0.5371
+INFO:root:Epoch 3 eval acc: 0.0352 eval loss: 0.0554
+Epoch 5/10 loss: 3.3203: 100%|██████████| 9/9 [00:00<00:00, 10.58it/s]
+INFO:root:Epoch 4 loss: 0.5380
+INFO:root:Epoch 4 eval acc: 0.0389 eval loss: 0.0554
+Epoch 6/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.43it/s]
+INFO:root:Epoch 5 loss: 0.5380
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.39it/s]
+INFO:root:Epoch 6 loss: 0.5383
+INFO:root:Epoch 6 eval acc: 0.0389 eval loss: 0.0554
+Epoch 8/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.63it/s]
+INFO:root:Epoch 7 loss: 0.5383
+INFO:root:Epoch 7 eval acc: 0.0389 eval loss: 0.0554
+Epoch 9/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.25it/s]
+INFO:root:Epoch 8 loss: 0.5372
+INFO:root:Epoch 8 eval acc: 0.0389 eval loss: 0.0554
+Epoch 10/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.44it/s]
+INFO:root:Epoch 9 loss: 0.5383
+INFO:root:Epoch 9 eval acc: 0.0389 eval loss: 0.0554
+INFO:root:Participant Participant.P2 done
+INFO:root:Participant Participant.P2 accuracy: 0.03888888888888889
+INFO:root:Participant Participant.P3 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.40it/s]
+INFO:root:Epoch 0 loss: 0.5283
+INFO:root:Epoch 0 eval acc: 0.0445 eval loss: 0.0554
+Epoch 2/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.44it/s]
+INFO:root:Epoch 1 loss: 0.5270
+INFO:root:Epoch 1 eval acc: 0.0445 eval loss: 0.0554
+Epoch 3/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.54it/s]
+INFO:root:Epoch 2 loss: 0.5321
+INFO:root:Epoch 2 eval acc: 0.0371 eval loss: 0.0555
+Epoch 4/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.25it/s]
+INFO:root:Epoch 3 loss: 0.5327
+INFO:root:Epoch 3 eval acc: 0.0371 eval loss: 0.0555
+Epoch 5/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.44it/s]
+INFO:root:Epoch 4 loss: 0.5337
+INFO:root:Epoch 4 eval acc: 0.0371 eval loss: 0.0555
+Epoch 6/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.30it/s]
+INFO:root:Epoch 5 loss: 0.5337
+INFO:root:Epoch 5 eval acc: 0.0371 eval loss: 0.0555
+Epoch 7/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.26it/s]
+INFO:root:Epoch 6 loss: 0.5337
+INFO:root:Epoch 6 eval acc: 0.0371 eval loss: 0.0555
+Epoch 8/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00,  9.86it/s]
+INFO:root:Epoch 7 loss: 0.5327
+INFO:root:Epoch 7 eval acc: 0.0371 eval loss: 0.0555
+Epoch 9/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.04it/s]
+INFO:root:Epoch 8 loss: 0.5327
+INFO:root:Epoch 8 eval acc: 0.0371 eval loss: 0.0555
+Epoch 10/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.95it/s]
+INFO:root:Epoch 9 loss: 0.5347
+INFO:root:Epoch 9 eval acc: 0.0371 eval loss: 0.0555
+INFO:root:Participant Participant.P3 done
+INFO:root:Participant Participant.P3 accuracy: 0.04452690166975881
+INFO:root:Participant Participant.P4 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.07it/s]
+INFO:root:Epoch 0 loss: 0.5364
+INFO:root:Epoch 0 eval acc: 0.0315 eval loss: 0.0555
+Epoch 2/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.72it/s]
+INFO:root:Epoch 1 loss: 0.5356
+INFO:root:Epoch 1 eval acc: 0.0333 eval loss: 0.0554
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.22it/s]
+INFO:root:Epoch 2 loss: 0.5362
+INFO:root:Epoch 2 eval acc: 0.0370 eval loss: 0.0554
+Epoch 4/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.67it/s]
+INFO:root:Epoch 3 loss: 0.5349
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.3575: 100%|██████████| 9/9 [00:01<00:00,  7.92it/s]
+INFO:root:Epoch 4 loss: 0.5359
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.97it/s]
+INFO:root:Epoch 5 loss: 0.5357
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.74it/s]
+INFO:root:Epoch 6 loss: 0.5347
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.23it/s]
+INFO:root:Epoch 7 loss: 0.5332
+INFO:root:Epoch 7 eval acc: 0.0389 eval loss: 0.0554
+Epoch 9/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.85it/s]
+INFO:root:Epoch 8 loss: 0.5337
+INFO:root:Epoch 8 eval acc: 0.0389 eval loss: 0.0554
+Epoch 10/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.08it/s]
+INFO:root:Epoch 9 loss: 0.5327
+INFO:root:Epoch 9 eval acc: 0.0407 eval loss: 0.0553
+INFO:root:Participant Participant.P4 done
+INFO:root:Participant Participant.P4 accuracy: 0.040740740740740744
+INFO:root:Participant Participant.P5 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.84it/s]
+INFO:root:Epoch 0 loss: 0.8345
+INFO:root:Epoch 0 eval acc: 0.0370 eval loss: 0.0554
+Epoch 2/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.49it/s]
+INFO:root:Epoch 1 loss: 0.8345
+INFO:root:Epoch 1 eval acc: 0.0370 eval loss: 0.0554
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:01<00:00,  8.08it/s]
+INFO:root:Epoch 2 loss: 0.8345
+INFO:root:Epoch 2 eval acc: 0.0370 eval loss: 0.0554
+Epoch 4/10 loss: 3.3575: 100%|██████████| 9/9 [00:01<00:00,  8.82it/s]
+INFO:root:Epoch 3 loss: 0.8345
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.38it/s]
+INFO:root:Epoch 4 loss: 0.8345
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.85it/s]
+INFO:root:Epoch 5 loss: 0.8345
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.89it/s]
+INFO:root:Epoch 6 loss: 0.8345
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 11.04it/s]
+INFO:root:Epoch 7 loss: 0.8345
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 11.08it/s]
+INFO:root:Epoch 8 loss: 0.8345
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 11.09it/s]
+INFO:root:Epoch 9 loss: 0.8345
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P5 done
+INFO:root:Participant Participant.P5 accuracy: 0.037037037037037035
+INFO:root:Participant Participant.P6 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.66it/s]
+INFO:root:Epoch 0 loss: 0.5379
+INFO:root:Epoch 0 eval acc: 0.0370 eval loss: 0.0554
+Epoch 2/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.13it/s]
+INFO:root:Epoch 1 loss: 0.5379
+INFO:root:Epoch 1 eval acc: 0.0333 eval loss: 0.0554
+Epoch 3/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.15it/s]
+INFO:root:Epoch 2 loss: 0.5364
+INFO:root:Epoch 2 eval acc: 0.0333 eval loss: 0.0554
+Epoch 4/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.99it/s]
+INFO:root:Epoch 3 loss: 0.5339
+INFO:root:Epoch 3 eval acc: 0.0352 eval loss: 0.0554
+Epoch 5/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00,  9.92it/s]
+INFO:root:Epoch 4 loss: 0.5327
+INFO:root:Epoch 4 eval acc: 0.0352 eval loss: 0.0554
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.03it/s]
+INFO:root:Epoch 5 loss: 0.5347
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.12it/s]
+INFO:root:Epoch 6 loss: 0.5337
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.2504: 100%|██████████| 9/9 [00:00<00:00,  9.99it/s]
+INFO:root:Epoch 7 loss: 0.5316
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.16it/s]
+INFO:root:Epoch 8 loss: 0.5347
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.04it/s]
+INFO:root:Epoch 9 loss: 0.5327
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P6 done
+INFO:root:Participant Participant.P6 accuracy: 0.037037037037037035
+INFO:root:Participant Participant.P7 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.65it/s]
+INFO:root:Epoch 0 loss: 0.5355
+INFO:root:Epoch 0 eval acc: 0.0370 eval loss: 0.0554
+Epoch 2/10 loss: 3.2504: 100%|██████████| 9/9 [00:00<00:00, 10.07it/s]
+INFO:root:Epoch 1 loss: 0.5316
+INFO:root:Epoch 1 eval acc: 0.0370 eval loss: 0.0554
+Epoch 3/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.94it/s]
+INFO:root:Epoch 2 loss: 0.5337
+INFO:root:Epoch 2 eval acc: 0.0370 eval loss: 0.0554
+Epoch 4/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.96it/s]
+INFO:root:Epoch 3 loss: 0.5347
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.05it/s]
+INFO:root:Epoch 4 loss: 0.5337
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.80it/s]
+INFO:root:Epoch 5 loss: 0.5347
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.93it/s]
+INFO:root:Epoch 6 loss: 0.5337
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00,  9.93it/s]
+INFO:root:Epoch 7 loss: 0.5327
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.05it/s]
+INFO:root:Epoch 8 loss: 0.5327
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00,  9.94it/s]
+INFO:root:Epoch 9 loss: 0.5327
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P7 done
+INFO:root:Participant Participant.P7 accuracy: 0.037037037037037035
+INFO:root:Participant Participant.P8 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.86it/s]
+INFO:root:Epoch 0 loss: 0.5384
+INFO:root:Epoch 0 eval acc: 0.0389 eval loss: 0.0554
+Epoch 2/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.20it/s]
+INFO:root:Epoch 1 loss: 0.5381
+INFO:root:Epoch 1 eval acc: 0.0315 eval loss: 0.0555
+Epoch 3/10 loss: 3.2504: 100%|██████████| 9/9 [00:00<00:00, 10.09it/s]
+INFO:root:Epoch 2 loss: 0.5326
+INFO:root:Epoch 2 eval acc: 0.0370 eval loss: 0.0554
+Epoch 4/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00,  9.84it/s]
+INFO:root:Epoch 3 loss: 0.5327
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.16it/s]
+INFO:root:Epoch 4 loss: 0.5327
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.61it/s]
+INFO:root:Epoch 5 loss: 0.5337
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.08it/s]
+INFO:root:Epoch 6 loss: 0.5347
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.3218: 100%|██████████| 9/9 [00:01<00:00,  8.33it/s]
+INFO:root:Epoch 7 loss: 0.5337
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.08it/s]
+INFO:root:Epoch 8 loss: 0.5347
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.25it/s]
+INFO:root:Epoch 9 loss: 0.5347
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P8 done
+INFO:root:Participant Participant.P8 accuracy: 0.03888888888888889
+INFO:root:Participant Participant.P9 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00,  9.79it/s]
+INFO:root:Epoch 0 loss: 0.5369
+INFO:root:Epoch 0 eval acc: 0.0372 eval loss: 0.0556
+Epoch 2/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.13it/s]
+INFO:root:Epoch 1 loss: 0.5380
+INFO:root:Epoch 1 eval acc: 0.0372 eval loss: 0.0556
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.12it/s]
+INFO:root:Epoch 2 loss: 0.5392
+INFO:root:Epoch 2 eval acc: 0.0372 eval loss: 0.0556
+Epoch 4/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.46it/s]
+INFO:root:Epoch 3 loss: 0.5392
+INFO:root:Epoch 3 eval acc: 0.0372 eval loss: 0.0556
+Epoch 5/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.13it/s]
+INFO:root:Epoch 4 loss: 0.5380
+INFO:root:Epoch 4 eval acc: 0.0372 eval loss: 0.0556
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.03it/s]
+INFO:root:Epoch 5 loss: 0.5392
+INFO:root:Epoch 5 eval acc: 0.0372 eval loss: 0.0556
+Epoch 7/10 loss: 3.2464: 100%|██████████| 9/9 [00:00<00:00, 10.24it/s]
+INFO:root:Epoch 6 loss: 0.5358
+INFO:root:Epoch 6 eval acc: 0.0372 eval loss: 0.0556
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.19it/s]
+INFO:root:Epoch 7 loss: 0.5392
+INFO:root:Epoch 7 eval acc: 0.0372 eval loss: 0.0556
+Epoch 9/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.16it/s]
+INFO:root:Epoch 8 loss: 0.5369
+INFO:root:Epoch 8 eval acc: 0.0372 eval loss: 0.0556
+Epoch 10/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.06it/s]
+INFO:root:Epoch 9 loss: 0.5380
+INFO:root:Epoch 9 eval acc: 0.0372 eval loss: 0.0556
+INFO:root:Participant Participant.P9 done
+INFO:root:Participant Participant.P9 accuracy: 0.03717472118959108
+INFO:root:Participant Participant.P10 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00,  9.85it/s]
+INFO:root:Epoch 0 loss: 0.5359
+INFO:root:Epoch 0 eval acc: 0.0316 eval loss: 0.0557
+Epoch 2/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.19it/s]
+INFO:root:Epoch 1 loss: 0.5384
+INFO:root:Epoch 1 eval acc: 0.0316 eval loss: 0.0557
+Epoch 3/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.05it/s]
+INFO:root:Epoch 2 loss: 0.5378
+INFO:root:Epoch 2 eval acc: 0.0316 eval loss: 0.0557
+Epoch 4/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.20it/s]
+INFO:root:Epoch 3 loss: 0.5384
+INFO:root:Epoch 3 eval acc: 0.0316 eval loss: 0.0557
+Epoch 5/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.21it/s]
+INFO:root:Epoch 4 loss: 0.5373
+INFO:root:Epoch 4 eval acc: 0.0316 eval loss: 0.0557
+Epoch 6/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.16it/s]
+INFO:root:Epoch 5 loss: 0.5362
+INFO:root:Epoch 5 eval acc: 0.0335 eval loss: 0.0556
+Epoch 7/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.25it/s]
+INFO:root:Epoch 6 loss: 0.5354
+INFO:root:Epoch 6 eval acc: 0.0390 eval loss: 0.0556
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.17it/s]
+INFO:root:Epoch 7 loss: 0.5392
+INFO:root:Epoch 7 eval acc: 0.0372 eval loss: 0.0556
+Epoch 9/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.13it/s]
+INFO:root:Epoch 8 loss: 0.5392
+INFO:root:Epoch 8 eval acc: 0.0372 eval loss: 0.0556
+Epoch 10/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.19it/s]
+INFO:root:Epoch 9 loss: 0.5392
+INFO:root:Epoch 9 eval acc: 0.0372 eval loss: 0.0556
+INFO:root:Participant Participant.P10 done
+INFO:root:Participant Participant.P10 accuracy: 0.03903345724907063
+INFO:root:Participant Participant.P12 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.2987: 100%|██████████| 9/9 [00:00<00:00, 10.50it/s]
+INFO:root:Epoch 0 loss: 0.6084
+INFO:root:Epoch 0 eval acc: 0.0196 eval loss: 0.0524
+Epoch 2/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.76it/s]
+INFO:root:Epoch 1 loss: 0.6116
+INFO:root:Epoch 1 eval acc: 0.0137 eval loss: 0.0524
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.83it/s]
+INFO:root:Epoch 2 loss: 0.6131
+INFO:root:Epoch 2 eval acc: 0.0392 eval loss: 0.0521
+Epoch 4/10 loss: 3.2987: 100%|██████████| 9/9 [00:00<00:00, 10.77it/s]
+INFO:root:Epoch 3 loss: 0.6091
+INFO:root:Epoch 3 eval acc: 0.0392 eval loss: 0.0521
+Epoch 5/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.75it/s]
+INFO:root:Epoch 4 loss: 0.6123
+INFO:root:Epoch 4 eval acc: 0.0392 eval loss: 0.0521
+Epoch 6/10 loss: 3.2987: 100%|██████████| 9/9 [00:00<00:00, 10.76it/s]
+INFO:root:Epoch 5 loss: 0.6091
+INFO:root:Epoch 5 eval acc: 0.0392 eval loss: 0.0521
+Epoch 7/10 loss: 3.2399: 100%|██████████| 9/9 [00:00<00:00, 10.83it/s]
+INFO:root:Epoch 6 loss: 0.6059
+INFO:root:Epoch 6 eval acc: 0.0392 eval loss: 0.0521
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.68it/s]
+INFO:root:Epoch 7 loss: 0.6123
+INFO:root:Epoch 7 eval acc: 0.0392 eval loss: 0.0521
+Epoch 9/10 loss: 3.2987: 100%|██████████| 9/9 [00:00<00:00, 10.54it/s]
+INFO:root:Epoch 8 loss: 0.6091
+INFO:root:Epoch 8 eval acc: 0.0392 eval loss: 0.0521
+Epoch 10/10 loss: 3.2987: 100%|██████████| 9/9 [00:00<00:00, 10.66it/s]
+INFO:root:Epoch 9 loss: 0.6091
+INFO:root:Epoch 9 eval acc: 0.0392 eval loss: 0.0521
+INFO:root:Participant Participant.P12 done
+INFO:root:Participant Participant.P12 accuracy: 0.0392156862745098
+INFO:root:Participant Participant.P13 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3573: 100%|██████████| 9/9 [00:00<00:00, 10.04it/s]
+INFO:root:Epoch 0 loss: 0.5392
+INFO:root:Epoch 0 eval acc: 0.0383 eval loss: 0.0573
+Epoch 2/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.32it/s]
+INFO:root:Epoch 1 loss: 0.5380
+INFO:root:Epoch 1 eval acc: 0.0383 eval loss: 0.0573
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.93it/s]
+INFO:root:Epoch 2 loss: 0.5392
+INFO:root:Epoch 2 eval acc: 0.0383 eval loss: 0.0573
+Epoch 4/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.18it/s]
+INFO:root:Epoch 3 loss: 0.5380
+INFO:root:Epoch 3 eval acc: 0.0383 eval loss: 0.0573
+Epoch 5/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.35it/s]
+INFO:root:Epoch 4 loss: 0.5380
+INFO:root:Epoch 4 eval acc: 0.0383 eval loss: 0.0573
+Epoch 6/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.02it/s]
+INFO:root:Epoch 5 loss: 0.5369
+INFO:root:Epoch 5 eval acc: 0.0383 eval loss: 0.0573
+Epoch 7/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.18it/s]
+INFO:root:Epoch 6 loss: 0.5380
+INFO:root:Epoch 6 eval acc: 0.0383 eval loss: 0.0573
+Epoch 8/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.07it/s]
+INFO:root:Epoch 7 loss: 0.5380
+INFO:root:Epoch 7 eval acc: 0.0383 eval loss: 0.0573
+Epoch 9/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.28it/s]
+INFO:root:Epoch 8 loss: 0.5369
+INFO:root:Epoch 8 eval acc: 0.0383 eval loss: 0.0573
+Epoch 10/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.11it/s]
+INFO:root:Epoch 9 loss: 0.5392
+INFO:root:Epoch 9 eval acc: 0.0383 eval loss: 0.0573
+INFO:root:Participant Participant.P13 done
+INFO:root:Participant Participant.P13 accuracy: 0.038314176245210725
+INFO:root:Participant Participant.P14 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.06it/s]
+INFO:root:Epoch 0 loss: 0.5439
+INFO:root:Epoch 0 eval acc: 0.0353 eval loss: 0.0555
+Epoch 2/10 loss: 3.3191: 100%|██████████| 9/9 [00:00<00:00, 10.29it/s]
+INFO:root:Epoch 1 loss: 0.5427
+INFO:root:Epoch 1 eval acc: 0.0353 eval loss: 0.0555
+Epoch 3/10 loss: 3.2421: 100%|██████████| 9/9 [00:00<00:00, 10.47it/s]
+INFO:root:Epoch 2 loss: 0.5402
+INFO:root:Epoch 2 eval acc: 0.0353 eval loss: 0.0555
+Epoch 4/10 loss: 3.3191: 100%|██████████| 9/9 [00:00<00:00, 10.35it/s]
+INFO:root:Epoch 3 loss: 0.5427
+INFO:root:Epoch 3 eval acc: 0.0353 eval loss: 0.0555
+Epoch 5/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.05it/s]
+INFO:root:Epoch 4 loss: 0.5439
+INFO:root:Epoch 4 eval acc: 0.0353 eval loss: 0.0555
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.99it/s]
+INFO:root:Epoch 5 loss: 0.5439
+INFO:root:Epoch 5 eval acc: 0.0353 eval loss: 0.0555
+Epoch 7/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.02it/s]
+INFO:root:Epoch 6 loss: 0.5439
+INFO:root:Epoch 6 eval acc: 0.0353 eval loss: 0.0555
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.02it/s]
+INFO:root:Epoch 7 loss: 0.5439
+INFO:root:Epoch 7 eval acc: 0.0353 eval loss: 0.0555
+Epoch 9/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.22it/s]
+INFO:root:Epoch 8 loss: 0.5439
+INFO:root:Epoch 8 eval acc: 0.0353 eval loss: 0.0555
+Epoch 10/10 loss: 3.3191: 100%|██████████| 9/9 [00:00<00:00, 10.11it/s]
+INFO:root:Epoch 9 loss: 0.5427
+INFO:root:Epoch 9 eval acc: 0.0353 eval loss: 0.0555
+INFO:root:Participant Participant.P14 done
+INFO:root:Participant Participant.P14 accuracy: 0.03525046382189239
+INFO:root:Participant Participant.P15 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.65it/s]
+INFO:root:Epoch 0 loss: 0.5337
+INFO:root:Epoch 0 eval acc: 0.0370 eval loss: 0.0554
+Epoch 2/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.07it/s]
+INFO:root:Epoch 1 loss: 0.5327
+INFO:root:Epoch 1 eval acc: 0.0370 eval loss: 0.0554
+Epoch 3/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.01it/s]
+INFO:root:Epoch 2 loss: 0.5327
+INFO:root:Epoch 2 eval acc: 0.0370 eval loss: 0.0554
+Epoch 4/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.98it/s]
+INFO:root:Epoch 3 loss: 0.5347
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00,  9.99it/s]
+INFO:root:Epoch 4 loss: 0.5327
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.04it/s]
+INFO:root:Epoch 5 loss: 0.5347
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.08it/s]
+INFO:root:Epoch 6 loss: 0.5327
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.15it/s]
+INFO:root:Epoch 7 loss: 0.5347
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.14it/s]
+INFO:root:Epoch 8 loss: 0.5347
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.20it/s]
+INFO:root:Epoch 9 loss: 0.5337
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P15 done
+INFO:root:Participant Participant.P15 accuracy: 0.037037037037037035
+INFO:root:Participant Participant.P16 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00,  9.85it/s]
+INFO:root:Epoch 0 loss: 0.5368
+INFO:root:Epoch 0 eval acc: 0.0370 eval loss: 0.0554
+Epoch 2/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.17it/s]
+INFO:root:Epoch 1 loss: 0.5369
+INFO:root:Epoch 1 eval acc: 0.0370 eval loss: 0.0554
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.12it/s]
+INFO:root:Epoch 2 loss: 0.5392
+INFO:root:Epoch 2 eval acc: 0.0370 eval loss: 0.0554
+Epoch 4/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.22it/s]
+INFO:root:Epoch 3 loss: 0.5369
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.22it/s]
+INFO:root:Epoch 4 loss: 0.5392
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.11it/s]
+INFO:root:Epoch 5 loss: 0.5392
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.2094: 100%|██████████| 9/9 [00:00<00:00, 10.07it/s]
+INFO:root:Epoch 6 loss: 0.5347
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00, 10.29it/s]
+INFO:root:Epoch 7 loss: 0.5380
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.2835: 100%|██████████| 9/9 [00:00<00:00, 10.15it/s]
+INFO:root:Epoch 8 loss: 0.5369
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.3205: 100%|██████████| 9/9 [00:00<00:00,  9.91it/s]
+INFO:root:Epoch 9 loss: 0.5380
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P16 done
+INFO:root:Participant Participant.P16 accuracy: 0.037037037037037035
+INFO:root:Participant Participant.P17 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3572: 100%|██████████| 9/9 [00:00<00:00,  9.84it/s]
+INFO:root:Epoch 0 loss: 0.5501
+INFO:root:Epoch 0 eval acc: 0.0373 eval loss: 0.0558
+Epoch 2/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.32it/s]
+INFO:root:Epoch 1 loss: 0.5511
+INFO:root:Epoch 1 eval acc: 0.0448 eval loss: 0.0556
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.29it/s]
+INFO:root:Epoch 2 loss: 0.5515
+INFO:root:Epoch 2 eval acc: 0.0429 eval loss: 0.0557
+Epoch 4/10 loss: 3.3175: 100%|██████████| 9/9 [00:00<00:00,  9.76it/s]
+INFO:root:Epoch 3 loss: 0.5507
+INFO:root:Epoch 3 eval acc: 0.0429 eval loss: 0.0557
+Epoch 5/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.35it/s]
+INFO:root:Epoch 4 loss: 0.5520
+INFO:root:Epoch 4 eval acc: 0.0429 eval loss: 0.0557
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.05it/s]
+INFO:root:Epoch 5 loss: 0.5520
+INFO:root:Epoch 5 eval acc: 0.0429 eval loss: 0.0557
+Epoch 7/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.85it/s]
+INFO:root:Epoch 6 loss: 0.5520
+INFO:root:Epoch 6 eval acc: 0.0429 eval loss: 0.0557
+Epoch 8/10 loss: 3.3169: 100%|██████████| 9/9 [00:00<00:00, 10.26it/s]
+INFO:root:Epoch 7 loss: 0.5507
+INFO:root:Epoch 7 eval acc: 0.0429 eval loss: 0.0557
+Epoch 9/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.17it/s]
+INFO:root:Epoch 8 loss: 0.5520
+INFO:root:Epoch 8 eval acc: 0.0448 eval loss: 0.0556
+Epoch 10/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.09it/s]
+INFO:root:Epoch 9 loss: 0.5520
+INFO:root:Epoch 9 eval acc: 0.0429 eval loss: 0.0557
+INFO:root:Participant Participant.P17 done
+INFO:root:Participant Participant.P17 accuracy: 0.04477611940298507
+INFO:root:Participant Participant.P18 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00,  9.79it/s]
+INFO:root:Epoch 0 loss: 0.5327
+INFO:root:Epoch 0 eval acc: 0.0371 eval loss: 0.0555
+Epoch 2/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.02it/s]
+INFO:root:Epoch 1 loss: 0.5327
+INFO:root:Epoch 1 eval acc: 0.0315 eval loss: 0.0556
+Epoch 3/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.16it/s]
+INFO:root:Epoch 2 loss: 0.5337
+INFO:root:Epoch 2 eval acc: 0.0315 eval loss: 0.0556
+Epoch 4/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.05it/s]
+INFO:root:Epoch 3 loss: 0.5337
+INFO:root:Epoch 3 eval acc: 0.0297 eval loss: 0.0556
+Epoch 5/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.86it/s]
+INFO:root:Epoch 4 loss: 0.5342
+INFO:root:Epoch 4 eval acc: 0.0371 eval loss: 0.0553
+Epoch 6/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.30it/s]
+INFO:root:Epoch 5 loss: 0.5334
+INFO:root:Epoch 5 eval acc: 0.0445 eval loss: 0.0551
+Epoch 7/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.00it/s]
+INFO:root:Epoch 6 loss: 0.5355
+INFO:root:Epoch 6 eval acc: 0.0445 eval loss: 0.0551
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.12it/s]
+INFO:root:Epoch 7 loss: 0.5357
+INFO:root:Epoch 7 eval acc: 0.0353 eval loss: 0.0554
+Epoch 9/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.08it/s]
+INFO:root:Epoch 8 loss: 0.5344
+INFO:root:Epoch 8 eval acc: 0.0371 eval loss: 0.0553
+Epoch 10/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.96it/s]
+INFO:root:Epoch 9 loss: 0.5344
+INFO:root:Epoch 9 eval acc: 0.0408 eval loss: 0.0552
+INFO:root:Participant Participant.P18 done
+INFO:root:Participant Participant.P18 accuracy: 0.04452690166975881
+INFO:root:Participant Participant.P19 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.89it/s]
+INFO:root:Epoch 0 loss: 0.5332
+INFO:root:Epoch 0 eval acc: 0.0755 eval loss: 0.0558
+Epoch 2/10 loss: 3.2858: 100%|██████████| 9/9 [00:00<00:00, 10.01it/s]
+INFO:root:Epoch 1 loss: 0.5322
+INFO:root:Epoch 1 eval acc: 0.0698 eval loss: 0.0559
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.13it/s]
+INFO:root:Epoch 2 loss: 0.5354
+INFO:root:Epoch 2 eval acc: 0.0566 eval loss: 0.0561
+Epoch 4/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.23it/s]
+INFO:root:Epoch 3 loss: 0.5339
+INFO:root:Epoch 3 eval acc: 0.0792 eval loss: 0.0558
+Epoch 5/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.08it/s]
+INFO:root:Epoch 4 loss: 0.5312
+INFO:root:Epoch 4 eval acc: 0.0774 eval loss: 0.0558
+Epoch 6/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00, 10.11it/s]
+INFO:root:Epoch 5 loss: 0.5305
+INFO:root:Epoch 5 eval acc: 0.0755 eval loss: 0.0558
+Epoch 7/10 loss: 3.1790: 100%|██████████| 9/9 [00:00<00:00, 10.07it/s]
+INFO:root:Epoch 6 loss: 0.5259
+INFO:root:Epoch 6 eval acc: 0.0755 eval loss: 0.0558
+Epoch 8/10 loss: 3.2147: 100%|██████████| 9/9 [00:00<00:00, 10.00it/s]
+INFO:root:Epoch 7 loss: 0.5267
+INFO:root:Epoch 7 eval acc: 0.0755 eval loss: 0.0558
+Epoch 9/10 loss: 3.2504: 100%|██████████| 9/9 [00:00<00:00, 10.19it/s]
+INFO:root:Epoch 8 loss: 0.5280
+INFO:root:Epoch 8 eval acc: 0.0755 eval loss: 0.0558
+Epoch 10/10 loss: 3.2861: 100%|██████████| 9/9 [00:00<00:00, 10.09it/s]
+INFO:root:Epoch 9 loss: 0.5292
+INFO:root:Epoch 9 eval acc: 0.0755 eval loss: 0.0558
+INFO:root:Participant Participant.P19 done
+INFO:root:Participant Participant.P19 accuracy: 0.07924528301886792
+INFO:root:Participant Participant.P20 start
+INFO:root:FeatureModel(
+  (_dense_block1): DenseBlock(
+    (_fc): Linear(in_features=96, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block2): DenseBlock(
+    (_fc): Linear(in_features=192, out_features=384, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_dense_block3): DenseBlock(
+    (_fc): Linear(in_features=384, out_features=192, bias=True)
+    (_batch_norm): Identity()
+    (_relu): ReLU(inplace=True)
+    (_dropout): Identity()
+  )
+  (_output): Linear(in_features=192, out_features=27, bias=True)
+)
+INFO:root:Number Parameters: {self.get_n_params()}
+Epoch 1/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.79it/s]
+INFO:root:Epoch 0 loss: 0.5393
+INFO:root:Epoch 0 eval acc: 0.0370 eval loss: 0.0554
+Epoch 2/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.97it/s]
+INFO:root:Epoch 1 loss: 0.5394
+INFO:root:Epoch 1 eval acc: 0.0352 eval loss: 0.0554
+Epoch 3/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.10it/s]
+INFO:root:Epoch 2 loss: 0.5396
+INFO:root:Epoch 2 eval acc: 0.0352 eval loss: 0.0554
+Epoch 4/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.99it/s]
+INFO:root:Epoch 3 loss: 0.5394
+INFO:root:Epoch 3 eval acc: 0.0370 eval loss: 0.0554
+Epoch 5/10 loss: 3.3571: 100%|██████████| 9/9 [00:00<00:00,  9.88it/s]
+INFO:root:Epoch 4 loss: 0.5393
+INFO:root:Epoch 4 eval acc: 0.0370 eval loss: 0.0554
+Epoch 6/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.73it/s]
+INFO:root:Epoch 5 loss: 0.5394
+INFO:root:Epoch 5 eval acc: 0.0370 eval loss: 0.0554
+Epoch 7/10 loss: 3.3570: 100%|██████████| 9/9 [00:00<00:00, 10.00it/s]
+INFO:root:Epoch 6 loss: 0.5393
+INFO:root:Epoch 6 eval acc: 0.0370 eval loss: 0.0554
+Epoch 8/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00, 10.01it/s]
+INFO:root:Epoch 7 loss: 0.5357
+INFO:root:Epoch 7 eval acc: 0.0370 eval loss: 0.0554
+Epoch 9/10 loss: 3.3218: 100%|██████████| 9/9 [00:00<00:00,  9.93it/s]
+INFO:root:Epoch 8 loss: 0.5337
+INFO:root:Epoch 8 eval acc: 0.0370 eval loss: 0.0554
+Epoch 10/10 loss: 3.3575: 100%|██████████| 9/9 [00:00<00:00,  9.98it/s]
+INFO:root:Epoch 9 loss: 0.5347
+INFO:root:Epoch 9 eval acc: 0.0370 eval loss: 0.0554
+INFO:root:Participant Participant.P20 done
+INFO:root:Participant Participant.P20 accuracy: 0.037037037037037035
+INFO:root:Participant acc: {<Participant.P1: 'P1'>: 0.037037037037037035, <Participant.P2: 'P2'>: 0.03888888888888889, <Participant.P3: 'P3'>: 0.04452690166975881, <Participant.P4: 'P4'>: 0.040740740740740744, <Participant.P5: 'P5'>: 0.037037037037037035, <Participant.P6: 'P6'>: 0.037037037037037035, <Participant.P7: 'P7'>: 0.037037037037037035, <Participant.P8: 'P8'>: 0.03888888888888889, <Participant.P9: 'P9'>: 0.03717472118959108, <Participant.P10: 'P10'>: 0.03903345724907063, <Participant.P12: 'P12'>: 0.0392156862745098, <Participant.P13: 'P13'>: 0.038314176245210725, <Participant.P14: 'P14'>: 0.03525046382189239, <Participant.P15: 'P15'>: 0.037037037037037035, <Participant.P16: 'P16'>: 0.037037037037037035, <Participant.P17: 'P17'>: 0.04477611940298507, <Participant.P18: 'P18'>: 0.04452690166975881, <Participant.P19: 'P19'>: 0.07924528301886792, <Participant.P20: 'P20'>: 0.037037037037037035}
+
+Process finished with exit code 0
