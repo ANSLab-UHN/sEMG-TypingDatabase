@@ -6,7 +6,6 @@
 - [Overview](#overview)
 - [Dataset Description](#dataset-description)
 - [Directory Structure](#directory-structure)
-   * [File Count](#file-count)
 - [Installation](#installation)
 - [Data Preparation Process](#data-preparation-process)
    * [Raw Signal Windows](#raw-signal-windows)
