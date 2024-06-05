@@ -4,10 +4,10 @@ import numpy as np
 import torch
 from sklearn.preprocessing import StandardScaler
 from torch.utils.data import Dataset, TensorDataset
-from common.folder_paths import VALID_FEATURES_ROOT
-from common.types_defined import Participant, DayT1T2, KeyPress
-from common.utils import load_tests
-from datasets.utils import load_X_y
+from keypressemg.common.folder_paths import VALID_FEATURES_ROOT
+from keypressemg.common.types_defined import Participant, DayT1T2, KeyPress
+from keypressemg.common.utils import load_tests
+from keypressemg.datasets.utils import load_X_y
 
 
 class SplitDayDataset(Dataset):

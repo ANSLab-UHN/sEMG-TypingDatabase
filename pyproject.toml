@@ -12,11 +12,16 @@ repository = "https://github.com/ANSLab-UHN/sEMG-TypingDatabase"
 readme = "README.md"
 packages =[
     {include = 'keypressemg'},
-    {include = "intanutil", from = "keypressemg"},
+    {include = 'data_prep', from = 'keypressemg'},
+    {include = "intanutil", from = "keypressemg/data_prep"},
+    {include = 'experiments_read', from = 'keypressemg/data_prep'},
+    {include = 'window_prepare', from = 'keypressemg/data_prep'},
     {include = 'common', from = 'keypressemg'},
     {include = 'datasets', from = 'keypressemg'},
     {include = 'models', from = 'keypressemg'},
-    {include = 'experiments_read', from = 'keypressemg'}
+    {include = 'trainers', from = 'keypressemg'},
+    {include = 'sweeps', from = 'keypressemg'},
+    {include = 'fl_trainers', from = 'keypressemg'}
 ]
 
 
@@ -30,7 +35,6 @@ seaborn = "^0.13.2"
 torch = "^2.3.0"
 tqdm = "^4.66.4"
 wandb = "^0.17.0"
-private-federated = {git = "https://github.com/moshebeutel/private_fed_refactored.git", rev = "emg_data"}
 
 
 

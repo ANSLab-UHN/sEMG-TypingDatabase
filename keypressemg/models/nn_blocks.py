@@ -50,14 +50,15 @@ class DenseBlock(nn.Module):
     def __init__(self, in_channels,
                  out_channels,
                  use_batchnorm=False,
-                 use_dropout=True):
+                 use_dropout=True,
+                 activation='relu'):
         super(DenseBlock, self).__init__()
         self._fc = nn.Linear(in_channels, out_channels)
         self._batch_norm = nn.BatchNorm1d(out_channels) if use_batchnorm \
             else nn.Identity(out_channels)
-        self._relu = nn.ReLU(out_channels)
+        self._act = nn.ReLU() if activation == 'relu' else nn.ELU()
         self._dropout = nn.Dropout(.5) if use_dropout else nn.Identity(out_channels)
 
     def forward(self, x):
         # return self._dropout(self._relu(self._batch_norm(self._fc(x))))
-        return F.relu(self._dropout(self._batch_norm(self._fc(x))))
+        return self._act(self._dropout(self._batch_norm(self._fc(x))))

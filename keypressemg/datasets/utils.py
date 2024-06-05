@@ -1,8 +1,6 @@
 from pathlib import Path
-
 import numpy as np
-
-from common.types_defined import Participant, DayT1T2
+from keypressemg.common.types_defined import Participant, DayT1T2
 
 
 def load_X_y(root: Path, participant: Participant, experiment_day: DayT1T2) -> tuple[np.ndarray, np.ndarray]:
