@@ -1,24 +1,36 @@
+from enum import Enum
 import torch
 from torch import nn
 
-from models.utils import initialize_weights
+
+class ModuleName(Enum):
+    LINEAR = 'Linear'
+    CONV1D = 'Conv1d'
+
+
+def get_module(name: ModuleName, in_f: int, out_f: int) -> nn.Module:
+    m = nn.Linear(in_f, out_f) if name == ModuleName.LINEAR else nn.Conv1d(in_f, out_f, kernel_size=3, stride=2)
+    nn.init.kaiming_normal_(m.weight)
+    m.bias.data.zero_()
+    return m
 
 
 def conv_block(in_f, out_f, activation='relu', pool='avg_pool',
                *args, **kwargs):
-    activations = nn.ModuleDict([
-        ['lrelu', nn.LeakyReLU()],
-        ['relu', nn.ReLU()]
-    ])
-
-    pools = nn.ModuleDict([
-        ['max_pool', nn.MaxPool1d(kernel_size=3)],
-        ['avg_pool', nn.AvgPool1d(kernel_size=3)],
-        ['adaptiveavgpool', nn.AdaptiveAvgPool1d(output_size=1)]
-    ])
+    activations = nn.ModuleDict({
+        'l_relu': nn.LeakyReLU(),
+        'relu': nn.ReLU()
+    })
+    assert activation in activations.keys(), f'activation should be one of {list(activations.keys())}'
+    pools = nn.ModuleDict({
+        'max_pool': nn.MaxPool1d(kernel_size=3),
+        'avg_pool': nn.AvgPool1d(kernel_size=3),
+        'adaptive_avg_pool': nn.AdaptiveAvgPool1d(output_size=1)
+    })
+    assert pool in pools.keys(), f'pool should be one of {list(pools.keys())}'
 
     return nn.Sequential(
-        nn.Conv1d(in_f, out_f, kernel_size=3, stride=2),
+        get_module(ModuleName.CONV1D, in_f, out_f),
         pools[pool],
         nn.BatchNorm1d(out_f),
         nn.Dropout(p=0.5),
@@ -27,8 +39,11 @@ def conv_block(in_f, out_f, activation='relu', pool='avg_pool',
 
 
 def dec_block(in_f, out_f):
+    linear = nn.Linear(in_f, out_f)
+    nn.init.kaiming_normal_(linear.weight)
+    linear.bias.data.zero_()
     return nn.Sequential(
-        nn.Linear(in_f, out_f),
+        get_module(ModuleName.LINEAR, in_f, out_f),
         nn.Dropout(p=0.5),
         nn.ReLU()
         # nn.Sigmoid()
@@ -46,12 +61,12 @@ class Encoder(nn.Module):
 
 
 class Decoder(nn.Module):
-    def __init__(self, dec_sizes, n_classes):
+    def __init__(self, dec_sizes, num_classes):
         super().__init__()
         self.dec_blocks = nn.Sequential(*[dec_block(in_f, out_f)
                                           for in_f, out_f in zip(dec_sizes, dec_sizes[1:])])
 
-        self.last = nn.Linear(dec_sizes[-1], n_classes)
+        self.last = get_module(ModuleName.LINEAR, dec_sizes[-1], num_classes)
 
     def forward(self, x):
         # print('before dec blocks', x.shape)
@@ -71,15 +86,6 @@ class EmgKeyPressClassifier(nn.Module):
         self.temp_pool = nn.AdaptiveAvgPool1d(1)
 
         self.decoder = Decoder(dec_sizes, n_classes)
-
-        for m in self.modules():
-
-            if isinstance(m, nn.Conv1d):
-                nn.init.kaiming_normal_(m.weight)
-                m.bias.data.zero_()
-            elif isinstance(m, nn.Linear):
-                nn.init.kaiming_normal_(m.weight)
-                m.bias.data.zero_()
 
     def forward(self, x):
         # print('before encoder', x.shape)

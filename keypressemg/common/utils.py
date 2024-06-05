@@ -2,9 +2,9 @@ import logging
 import time
 from pathlib import Path
 import numpy as np
-from common.folder_paths import (RAW_SIGNAL_ROOT, SIGNAL_WINDOWS_ROOT, SIGNAL_FEATURES_ROOT, LABELS_ROOT,
-                                 VALID_FEATURES_ROOT, LOGS_DIR)
-from common.types_defined import Participant, DayT1T2, KeyPress
+from keypressemg.common.folder_paths import (RAW_SIGNAL_ROOT, SIGNAL_WINDOWS_ROOT, SIGNAL_FEATURES_ROOT, LABELS_ROOT,
+                                             VALID_FEATURES_ROOT, LOGS_DIR)
+from keypressemg.common.types_defined import Participant, DayT1T2, KeyPress
 
 
 def load_tests(root: Path, pattern: str) -> np.ndarray:
@@ -61,14 +61,7 @@ def load_user_labels(participant: Participant, test: DayT1T2) -> np.ndarray:
     return data
 
 
-if __name__ == '__main__':
-    logging.basicConfig(level=logging.DEBUG)
-    test_arr = load_tests(VALID_FEATURES_ROOT, f'P20_T1_Z*.npy')
-    logging.info(f'Loaded {len(test_arr)} tests')
-    logging.info(f'Loaded test_arr shape {test_arr.shape}')
-
-
-def config_logger(args):
+def config_logger(args, logs_dir = LOGS_DIR):
     logger = logging.getLogger(args.app_name)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logger.setLevel(logging.INFO)
@@ -76,10 +69,8 @@ def config_logger(args):
     console_handler.setLevel(logging.INFO)
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
-    file_handler = logging.FileHandler(LOGS_DIR / f'train_{args.app_name}_{time.asctime()}.log')
+    file_handler = logging.FileHandler(logs_dir / f'train_{args.app_name}_{time.asctime()}.log')
     file_handler.setLevel(logging.INFO)
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
     return logger
-
-
