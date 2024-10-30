@@ -15,15 +15,14 @@
 for neurotechnological human-machine interfaces](link)
 
 ## Overview
-Dataset containing sEMG data for every alphabetical letter collected from 19
-participants across 2 days of testing
+Code and sample participant for dataset containing sEMG data for every alphabetical letter collected from 19
+participants across 2 days of testing. The full dataset is included _____
 
 
 ## Dataset Description
 19 able-bodied participants were instrumented with 16 channels of sEMG,
 8 channels per arm, placed in a circular arrangement on their upper forearm.
-Participants are labelled from **P1-P20** (excluding P11 that does not appear
-in the dataset as the data was corrupted).
+Participants are labelled from **P1-P19**.
 
 Two sessions on different days were conducted for each participant.
 During each session participants performed two recordings for each letter,
@@ -37,8 +36,9 @@ data and the sEMG data. Both the original key-logs and the csv containing the la
 timing data between the sEMG and the keylogger data is included with the dataset.
 
 ## Directory Structure
+Full participant directory can be found at ______. A sample participant (P1) is included in the CleanData folder here.
 ```
-Data/
+CleanData/
 	P1-20/
 		T1/
 			keylogs.txt
@@ -109,10 +109,11 @@ P20; T2: Number of Files: 52
 ```
 
 ## Installation
-Clone the repository - This will also download the data recordings. 
+Clone the repository - This will also download the sample P1 data recording. 
 ```
 git clone https://github.com/ANSLab-UHN/sEMG-TypingDatabase.git 
 ```
+Next download full dataset from (______) and move the full dataset to the CleanData folder in the downloaded repository.
 
 * Change directory to the cloned folder
 ```angular2html
