@@ -12,7 +12,7 @@
   
 ## Link to full dataset
 [Electromyographic typing gesture classification dataset
-for neurotechnological human-machine interfaces](link)
+for neurotechnological human-machine interfaces](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/KV65VI)
 
 ## Overview
 Code and sample participant for dataset containing sEMG data for every alphabetical letter collected from 19
