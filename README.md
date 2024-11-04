@@ -16,7 +16,7 @@ for neurotechnological human-machine interfaces](link)
 
 ## Overview
 Code and sample participant for dataset containing sEMG data for every alphabetical letter collected from 19
-participants across 2 days of testing. The full dataset is provided [here](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/KV65VI)
+participants across 2 days of testing. The full dataset is provided [here](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/KV65VI).
 
 
 ## Dataset Description
