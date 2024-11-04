@@ -36,7 +36,7 @@ data and the sEMG data. Both the original key-logs and the csv containing the la
 timing data between the sEMG and the keylogger data is included with the dataset.
 
 ## Directory Structure
-Full participant directory can be found in the provided link. A sample participant (P1) is included in the CleanData folder here.
+Full participant directory can be found in the provided link. A sample participant (P1) is included in the CleanData folder here. The directory structure for the CleanData folder is provided below.
 ```
 CleanData/
 	P1-20/
