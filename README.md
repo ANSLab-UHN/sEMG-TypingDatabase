@@ -16,7 +16,7 @@ for neurotechnological human-machine interfaces](link)
 
 ## Overview
 Code and sample participant for dataset containing sEMG data for every alphabetical letter collected from 19
-participants across 2 days of testing. The full dataset is included _____
+participants across 2 days of testing. The full dataset is included [_____](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/KV65VI)
 
 
 ## Dataset Description
@@ -36,7 +36,7 @@ data and the sEMG data. Both the original key-logs and the csv containing the la
 timing data between the sEMG and the keylogger data is included with the dataset.
 
 ## Directory Structure
-Full participant directory can be found at ______. A sample participant (P1) is included in the CleanData folder here.
+Full participant directory can be found at [______](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/KV65VI). A sample participant (P1) is included in the CleanData folder here.
 ```
 CleanData/
 	P1-20/
@@ -113,7 +113,7 @@ Clone the repository - This will also download the sample P1 data recording.
 ```
 git clone https://github.com/ANSLab-UHN/sEMG-TypingDatabase.git 
 ```
-Next download full dataset from (______) and move the full dataset to the CleanData folder in the downloaded repository.
+Next download full dataset from [______](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/KV65VI) and move the full dataset to the CleanData folder in the downloaded repository.
 
 * Change directory to the cloned folder
 ```angular2html
