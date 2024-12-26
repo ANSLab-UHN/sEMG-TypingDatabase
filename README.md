@@ -35,6 +35,8 @@ Alignment between the keylog and sEMG data was performed between the keylogger
 data and the sEMG data. Both the original key-logs and the csv containing the lag 
 timing data between the sEMG and the keylogger data is included with the dataset.
 
+Additionally, baseline classification results are provided for reference. These were obtained using the provided scripts. Results can be found in the folder ```angular2html ClassificationResults\Results\```. Within the results folder there are results for four different classification tests. The four baseline tests were a sweep across common feature sets, a sweep across window sizes for feature extraction, and cross participant and cross session classification results. The raw results for each test are provided in the respective folders. The results from these four tests are summarized in the ResultsSummary.xlsx file provided in the main Results folder.
+
 ## Directory Structure
 Full participant directory can be found in the provided link. A sample participant (P1) is included in the CleanData folder here. The directory structure for the CleanData folder is provided below.
 ```
