@@ -258,3 +258,21 @@ python -m keypressemg.trainers.train_svm_between_days
 ```angular2html
 python -m keypressemg.trainers.train_mlp_between_days
 ```
+
+## Baseline Results Description
+The results from the preliminary testing have been included in the folder ```angular2html ClassificationResults\Results\```. The raw output from these tests is provided in each of the corresponding folders. In each of these folders there is a ClassificationResult.csv that provides the raw numbers output and a ClassificationErrors.csv that lists all the warnings or errors that were noted by the scripts while running. The raw results have been summarized and are provided in ResultsSummary.xlsx
+
+### Cross Participant Classification
+A baseline cross participant test was done with the SVM model using LOPO cross validation. The data from all other participants across both test sessions were used to train the model which was then tested on the data from a single participant across both days. From this we obtained a classification accuracy and F1 score for each individual participant. These results are provided in CrossParticipant_classification/ClassificationResult.csv.
+
+### CrossTest_classification
+A cross-test classification baseline was done using the SVM baseline model. Here the data from the first test session were used to train a model to be tested on data from the second session for a single participant and vice versa. The raw results of the classification accuracy and F1 score for each participant’s session 1 and 2 are shown in CrossTest_classification/ClassificationResult.csv. These have been summarized and averaged in ResultsSummary.xlsx.
+
+### Feature_classification
+A series of feature sets were tested for the SVM classifier. These were tested on a single session of data where 70% was used for training and 30% of the session was used for a test set. The performance for each participant in each of their two sessions is listed in Feature_classification/ClassificationResult.csv. The feature set used is also provided in each row. The mean of each feature set’s performance across all participants is provided in ResultsSummary.xlsx.
+
+### Window_classification
+Multiple window sizes were tested during development of the SVM classifier. These were: 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8 second non-overlapping windows. Similar to the Feature tests, the classification accuracy and F1 score were found for each participant and each session individually with a 70/30 train/test split. The results are provided in Window_Classification/ClassificationResult.csv. The mean of these results is provided in ResultsSummary.xlsx.
+
+
+
