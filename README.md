@@ -137,7 +137,7 @@ pip install -e .
 KeypressEMG folder contains a script called `prepare_data.sh`.
 Run the script:
 ```
-bash data_prpare.sh
+bash prepare_data.sh
 ```
 and go grab a cup of coffee. 
 
@@ -234,6 +234,27 @@ All these files are stored in a folder named `valid_user_windows`.
 Produce this folder by:
 ```angular2html
 python -m keypressemg.data_prep.user_features
+```
+## Docker Setup
+As an alternative to Installation and Data preparation, there is a Dockerfile that when built does all that and 
+a container based on that image is ready to work.
+
+**Note**: 
+Before `docker build`:
+* Download the full keypress data from 
+[here](https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP3/KV65VI)
+  and extract `CleanData` subfolder contents  into this repo `./CleanData`.
+* Verify docker daemon (Docker Desktop on Windows) is running.
+
+In order to build the image run:
+```angular2html
+docker build -t semg-typingdatabase .
+```
+when finished, the docker image `semg-typingdatabase` is ready to and installed.
+
+Run a container based on built image:
+```angular2html
+docker run -it semg-typingdatabase bash
 ```
 
 ## Classification Baselines
