@@ -9,6 +9,7 @@
 - [Installation](#installation)
 - [Data Preparation Process](#data-preparation-process)
 - [Classification Baselines](#classification-baselines)
+- [Baseline Results](#baseline-results)
   
 ## Link to full dataset
 [Electromyographic typing gesture classification dataset
@@ -259,7 +260,7 @@ python -m keypressemg.trainers.train_svm_between_days
 python -m keypressemg.trainers.train_mlp_between_days
 ```
 
-## Baseline Results Description
+## Baseline Results
 The results from the preliminary testing have been included in the folder ```angular2html ClassificationResults\Results\```. The raw output from these tests is provided in each of the corresponding folders. In each of these folders there is a ClassificationResult.csv that provides the raw numbers output and a ClassificationErrors.csv that lists all the warnings or errors that were noted by the scripts while running. The raw results have been summarized and are provided in ResultsSummary.xlsx
 
 ### Cross Participant Classification
