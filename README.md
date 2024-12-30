@@ -261,7 +261,7 @@ python -m keypressemg.trainers.train_mlp_between_days
 ```
 
 ## Baseline Results
-The results from the preliminary testing have been included in the folder ```angular2html ClassificationResults\Results\```. The raw output from these tests is provided in each of the corresponding folders. In each of these folders there is a ClassificationResult.csv that provides the raw numbers output and a ClassificationErrors.csv that lists all the warnings or errors that were noted by the scripts while running. The raw results have been summarized and are provided in ResultsSummary.xlsx
+The results from the preliminary testing have been included in the folder ClassificationResults\Results\. The raw output from these tests is provided in each of the corresponding folders. In each of these folders there is a ClassificationResult.csv that provides the raw numbers output and a ClassificationErrors.csv that lists all the warnings or errors that were noted by the scripts while running. The raw results have been summarized and are provided in ResultsSummary.xlsx
 
 ### Cross Participant Classification
 A baseline cross participant test was done with the SVM model using LOPO cross validation. The data from all other participants across both test sessions were used to train the model which was then tested on the data from a single participant across both days. From this we obtained a classification accuracy and F1 score for each individual participant. These results are provided in CrossParticipant_classification/ClassificationResult.csv.
