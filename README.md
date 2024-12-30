@@ -121,33 +121,15 @@ Next download full dataset from [link](https://borealisdata.ca/dataset.xhtml?per
 ```angular2html
 cd sEMG-TypingDatabase
 ```
-### Install Using Bash Scripts
-Install dependencies inside a virtual environment
-using one the bash scripts:
-```angular2html
-bash install.sh
-```
-or if you have [Poetry](https://python-poetry.org/docs/) installed:
-```angular2html
-bash install_using_poetry.sh
-```
-### Manual Install
 Install dependencies inside a virtual environment
 ```angular2html
-python -m venv .venv
+python -m venv ./venv
 ```
 ```angular2html
 source venv/bin/activate
 ```
 ```angular2html
 pip install -e .
-```
-or alternatively, if [Poetry](https://python-poetry.org/docs/) is used
-```
-poetry shell
-```
-```angular2html
-poetry install
 ```
 
 ## Data Preparation Process
