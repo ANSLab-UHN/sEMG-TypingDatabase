@@ -26,7 +26,7 @@ def main(args):
             train_loader = DataLoader(train_set, batch_size=args.batch_size, shuffle=True)
             eval_loader = DataLoader(eval_set, batch_size=args.batch_size, shuffle=False)
 
-            model = FeatureModel(cls_layer=True)
+            model = FeatureModel(cls_layer=True,depth_power=args.depth_power)
             optimizer = torch.optim.SGD(model.parameters(), lr=args.learning_rate, momentum=args.momentum)
 
             acc, history = train(args, model, train_loader, eval_loader, optimizer, log_prefix=f'{p.value}_{t.value}')
@@ -61,9 +61,11 @@ def get_command_line_arguments(parser):
 
     parser.add_argument("--app-name", type=str,
                         default=f"train_mlp_split_day", )
+    parser.add_argument("--log-level", type=int, default=logging.INFO)
 
     # Model Parameters
     parser.add_argument("--num-classes", type=int, default=26, help="Number of unique labels")
+    parser.add_argument("--depth_power", type=int, default=3, help="Determines the network depth")
 
     parser.add_argument("--num-epochs", type=int, default=10, help="Number of training epochs")
     parser.add_argument("--batch-size", type=int, default=64, help="Number of samples in train batch")
