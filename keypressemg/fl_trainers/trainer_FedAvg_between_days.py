@@ -98,7 +98,7 @@ def train(args):
     device = get_device(cuda=int(args.gpus) >= 0, gpus=args.gpus)
 
 
-    net = FeatureModel(cls_layer=True)
+    net = FeatureModel(cls_layer=True, depth_power=args.depth_power)
     net = net.to(device)
     criteria = torch.nn.CrossEntropyLoss()
 
@@ -196,7 +196,7 @@ def train(args):
             log_dict.update({f"test_acc_score_{l}": m for (l, m) in test_acc_score_dict.items()})
             log_dict.update({f"test_f1_{l}": m for (l, m) in test_f1s_dict.items()})
 
-            wandb.log(log_dict)
+            wandb.log(log_dict, step=step)
 
         logging.info(
             f"epoch {step}, "
@@ -219,13 +219,22 @@ if __name__ == '__main__':
     parser.add_argument("--data-path", type=str,
                         default=f'{DATA_ROOT.as_posix()}/valid_user_features',
                         help="dir path for datafolder")
-    parser.add_argument("--app-name", type=str, default=f"train_mlp_split_day")
-    parser.add_argument("--num-classes", type=int, default=26, help="Number of unique labels")
 
+    #############################
+    #       App args            #
+    #############################
+    parser.add_argument("--app-name", type=str, default=f"train_FedAvg_between_days",)
+    parser.add_argument("--log-level", type=int, default=logging.INFO)
+
+    ##################################
+    #       Model args        #
+    ##################################
+    parser.add_argument("--num-classes", type=int, default=26, help="Number of unique labels")
+    parser.add_argument("--depth_power", type=int, default=3, help="Determines the network depth")
     ##################################
     #       Optimization args        #
     ##################################
-    parser.add_argument("--num-steps", type=int, default=300)
+    parser.add_argument("--num-steps", type=int, default=1000)
     parser.add_argument("--optimizer", type=str, default='sgd', choices=['adam', 'sgd'], help="learning rate")
     parser.add_argument("--batch-size", type=int, default=128)
     parser.add_argument("--inner-steps", type=int, default=10, help="number of inner steps")
