@@ -63,10 +63,10 @@ def get_command_line_arguments(parser):
 
     parser.add_argument("--app-name", type=str,
                         default=f"train_mlp_between_days", )
-
+    parser.add_argument("--log-level", type=int, default=logging.INFO)
     # Model Parameters
     parser.add_argument("--num-classes", type=int, default=26, help="Number of unique labels")
-
+    parser.add_argument("--depth_power", type=int, default=3, help="Determines the network depth")
     parser.add_argument("--num-epochs", type=int, default=400, help="Number of training epochs")
     parser.add_argument("--dec_sizes", type=list, default=[96, 26], help="Decoder Layer Sizes")
     parser.add_argument("--batch-size", type=int, default=64, help="Number of samples in train batch")

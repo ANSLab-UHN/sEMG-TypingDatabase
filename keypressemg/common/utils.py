@@ -64,13 +64,13 @@ def load_user_labels(participant: Participant, test: DayT1T2) -> np.ndarray:
 def config_logger(args, logs_dir = LOGS_DIR):
     logger = logging.getLogger(args.app_name)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    logger.setLevel(logging.INFO)
+    logger.setLevel(args.log_level)
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
+    console_handler.setLevel(args.log_level)
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
     file_handler = logging.FileHandler(logs_dir / f'train_{args.app_name}_{time.asctime()}.log')
-    file_handler.setLevel(logging.INFO)
+    file_handler.setLevel(args.log_level)
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
     return logger
