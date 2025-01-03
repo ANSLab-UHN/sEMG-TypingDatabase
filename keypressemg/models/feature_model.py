@@ -1,33 +1,47 @@
 import logging
 from torch import nn
+import torch.nn.functional as F
 from keypressemg.models.nn_blocks import DenseBlock
 from keypressemg.models.utils import get_n_params, initialize_weights
 
 
+# depth_to_num_params = {
+#     1:80_138,
+#     2:338_954,
+#     3:1_372_682,
+#     4:5_504_522,
+#     5:22_025_738
+# }
+
+
+def config_local_logger(depth_power, num_features, number_of_classes):
+    logger = logging.getLogger(
+        f'FeatureModel_{num_features}_features_{number_of_classes}_classes_{depth_power}_depth_power')
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    level = logging.INFO
+    logger.setLevel(level)
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(level)
+    console_handler.setFormatter(formatter)
+    logger.addHandler(console_handler)
+    return logger
+
 class FeatureModel(nn.Module):
-    def __init__(self, num_features=96, number_of_classes=26,
+    def __init__(self, num_features=96, number_of_classes=26, depth_power=5,
                  cls_layer=False, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self._output_info_fn = logging.info
-        self._output_debug_fn = logging.debug
+        logger = config_local_logger(depth_power, num_features, number_of_classes)
+        self._output_info_fn = logger.info
+        self._output_debug_fn = logger.debug
         self.cls_layer = cls_layer
 
-        self._dense_block1 = DenseBlock(num_features, 2 * num_features)
-        # use_batchnorm=use_group_norm, use_dropout=use_dropout)
-
-        self._dense_block2 = DenseBlock(2 * num_features, 2 * num_features)
-        # use_batchnorm=use_group_norm, use_dropout=use_dropout)
-
-        self._dense_block3 = DenseBlock(2 * num_features, 2 * num_features)
-        # use_batchnorm=use_group_norm, use_dropout=use_dropout)
-        #
-        self._dense_block4 = DenseBlock(2 * num_features, int((1 / 2) * num_features),
+        blocks = [DenseBlock((2**i) * num_features, (2**(i+1)) * num_features) for i in range(depth_power)]
+        blocks.append(DenseBlock((2**depth_power) * num_features, (2**depth_power) * num_features))
+        blocks.extend([DenseBlock((2**(i+1)) * num_features, (2**i) * num_features) for i in range(depth_power-1, -1, -1)])
+        self._blocks = nn.ModuleList(blocks)
+        self._extra_block = DenseBlock(num_features, int((1 / 2) * num_features),
                                         use_dropout=False, activation='elu')
-        # use_batchnorm=use_group_norm, use_dropout=use_dropout)
-
-        # self._dense_block5 = DenseBlock(4 * num_features, 2 * num_features)
-        # # use_batchnorm=use_group_norm, use_dropout=use_dropout)
         if self.cls_layer:
             self._output = nn.Linear(int((1 / 2) * num_features), number_of_classes)
 
@@ -40,39 +54,19 @@ class FeatureModel(nn.Module):
     def forward(self, x):
         self._output_debug_fn(f'input {x.shape}')
 
-        fc1 = self._dense_block1(x)
-        self._output_debug_fn(f'fc1 {fc1.shape}')
+        for i, block in enumerate(self._blocks):
+            x = block(x)
+            self._output_debug_fn(f'output block {i} {x.shape}')
 
-        fc2 = self._dense_block2(fc1)
-        self._output_debug_fn(f'fc2 {fc2.shape}')
-
-        fc3 = self._dense_block3(fc2)
-        self._output_debug_fn(f'fc3 {fc3.shape}')
-
-        fc4 = self._dense_block4(fc3)
-        self._output_debug_fn(f'fc4 {fc4.shape}')
+        x = self._extra_block(x)
+        self._output_debug_fn(f'extra block {x.shape}')
 
         if self.cls_layer:
-            logits = self._output(fc4)
+            logits = self._output(x)
             self._output_debug_fn(f'logits {logits.shape}')
+            probs = F.softmax(logits, dim=1)
+            self._output_debug_fn(f'softmax {probs.shape}')
+            x = probs
 
-            # probs = F.softmax(logits, dim=1)
-            # self._output_debug_fn(f'softmax {probs.shape}')
-            return logits
+        return x
 
-        return fc4
-
-        #
-        # fc5 = self._dense_block5(fc4)
-        # self._output_debug_fn(f'fc5 {fc5.shape}')
-
-        # if self.cls_layer:
-        #     logits = self._output(fc1)
-        #     self._output_debug_fn(f'logits {logits.shape}')
-        #
-        #     probs = F.softmax(logits, dim=1)
-        #     self._output_debug_fn(f'softmax {probs.shape}')
-        #
-        #     return probs
-        # else:
-        #     return fc1
