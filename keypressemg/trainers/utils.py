@@ -85,7 +85,7 @@ def train(args, model, train_loader, eval_loader, optimizer, log_prefix):
                        f'{log_prefix}_eval_loss': loss,
                        f'{log_prefix}_best_acc': best_acc,
                        f'{log_prefix}_train_loss': epoch_loss,
-                       f'{log_prefix}_best_epoch': best_epoch})
+                       f'{log_prefix}_best_epoch': best_epoch}, step=epoch)
         logger.info(
             f'{log_prefix}_Epoch {epoch} eval acc: {acc:.4f} (best so far {best_acc: .4f} in epoch {best_epoch})'
             f' eval loss: {loss:.4f}')
