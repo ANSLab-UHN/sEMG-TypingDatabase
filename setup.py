@@ -7,7 +7,7 @@ def parse_requirements(filename):
 
 setup(
     name="keypressemg",
-    version="0.1.0",
+    version="0.1.1",
     description="A package for managing the sEMG Typing Database",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
