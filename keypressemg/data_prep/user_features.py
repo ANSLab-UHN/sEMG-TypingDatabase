@@ -59,6 +59,9 @@ def get_command_line_arguments(parser):
     parser.add_argument("--data-path", type=str, default=DATA_ROOT.as_posix(),
                         help="dir path for datafolder")
 
+    parser.add_argument('--log_level', default='DEBUG', type=str, choices=['DEBUG', 'INFO'],
+                        help='log level: DEBUG, INFO Default: DEBUG.')
+
     parser.add_argument("--features-folder-name", type=str, default=VALID_FEATURES_ROOT.name)
 
     parser.add_argument("--user-features-folder-name", type=str, default=VALID_USER_FEATURES_ROOT.name)

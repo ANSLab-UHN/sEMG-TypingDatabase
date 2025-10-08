@@ -21,6 +21,9 @@ def get_command_line_arguments(parser):
     parser.add_argument("--data-path", type=str, default=DATA_ROOT.as_posix(),
                         help="dir path for datafolder")
 
+    parser.add_argument('--log_level', default='DEBUG', type=str, choices=['DEBUG', 'INFO'],
+                        help='log level: DEBUG, INFO Default: DEBUG.')
+
     parser.add_argument("--valid-folder-name", type=str, default=VALID_EXPERIMENTS_ROOT.name)
 
     parser.add_argument("--window-folder-name", type=str, default=VALID_WINDOWS_ROOT.name)
